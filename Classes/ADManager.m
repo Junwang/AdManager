@@ -44,8 +44,7 @@ typedef NS_ENUM(NSInteger, ADManagerStatus) {
 - (void)loadAdInMainThread{
     if (self.status == ADManagerStatusNone) {
         // Instantiate the interstitial using the class convenience method.
-        self.interstitial = [[GADInterstitial alloc] init];
-        self.interstitial.adUnitID = self.adUnitID;
+        self.interstitial = [[GADInterstitial alloc] initWithAdUnitID:self.adUnitID];
         self.interstitial.delegate = self;
         [self.interstitial loadRequest:[GADRequest request]];
     }
