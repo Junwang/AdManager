@@ -13,13 +13,5 @@ Pod::Spec.new do |s|
      s.xcconfig         = { 'FRAMEWORK_SEARCH_PATHS' =>    '"${PODS_ROOT}/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.1.0"'}
     s.vendored_libraries = 'Classes/LibAdapterFacebook/libAdapterFacebookAd.a', 'Classes/AdColonyAdMobAdapter/libAdapterSDKAdColony.a'
 	s.dependency 'Google-Mobile-Ads-SDK'
-    s.dependency 'AdColony'
-    s.dependency 'AdMobMediationAdapterIAd'
-    s.dependency 'MillennialMediaSDK'
-    s.dependency 'ChartboostSDK'
-    s.dependency 'MillennialMediaSDK'
-    s.dependency 'FBAudienceNetwork'
-    s.dependency 'AdMobMediationAdapterMMedia'
-    s.dependency 'AdMobMediationAdapterIAd'
 
 end
