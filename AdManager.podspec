@@ -10,5 +10,7 @@ Pod::Spec.new do |s|
     s.platform = :ios
 	s.source_files = "Classes/**/*.{h,m}"
     s.weak_frameworks = 'Webkit'
+     s.xcconfig         = { 'FRAMEWORK_SEARCH_PATHS' =>    '"${PODS_ROOT}/Google-Mobile-Ads-SDK/**"'}
+	s.dependency 'Google-Mobile-Ads-SDK'
 
 end
