@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     s.weak_frameworks = 'Webkit'
      s.xcconfig         = { 'FRAMEWORK_SEARCH_PATHS' =>    '"${PODS_ROOT}/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.1.0"'}
     s.vendored_libraries = 'Classes/LibAdapterFacebook/libAdapterFacebookAd.a', 'Classes/AdColonyAdMobAdapter/libAdapterSDKAdColony.a'
-	s.dependency 'Google-Mobile-Ads-SDK'
+    #s.dependency 'Google-Mobile-Ads-SDK'
     s.dependency 'AdColony'
     s.dependency 'AdMobMediationAdapterIAd'
     s.dependency 'MillennialMediaSDK'
